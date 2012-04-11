@@ -1,0 +1,8 @@
+This is an HTML5 periodic table, with values drawn from the python module
+periodictable (authored by Paul Kienzle)
+
+To use:  copy as-is, or to keep up-to-date git clone the periodictable repository
+and build locally, then run "make_periodic_json.py" to rebuild the JS database 
+"periodic_table.js"
+
+A version of this is hosted at http://ncnr.nist.gov/instruments/magik/Periodic.html
