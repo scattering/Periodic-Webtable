@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Scattering Periodic Table</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--		<link rel="stylesheet" type="text/css" href="css/blueprint/print.css" media="print" />-->
+<!--		<link rel="stylesheet" type="text/css" href="css/blueprint/screen.css" media="screen" />-->
+		<!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/periodic-table.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+		<script type="text/javascript" src="js/periodic_table.js"></script>
+		<script type="text/javascript" src="js/palettes.js"></script>
+			</head>
+	<body class="" id="periodic-table">		
+		<div id="content-wrapper">
+		<div id="content">
+		<script type="text/javascript">
+	    getPos = function(el) {
+            // yay readability
+            for (var lx=0, ly=0;
+                 el != null;
+                 lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
+            return {x: lx,y: ly};
+        }
+	//$(function(){
+	//	$('#elements td').click(function(){
+	//		var self = $(this).hasClass('active');
+	//		$('.active .info').fadeOut();
+	//		$('.active').removeClass('active');
+	//		if (!self) {
+	//			$(this).find('.info').fadeIn();
+	//			$(this).addClass('active');
+	//		}
+	//	});
+	//	$('#elements a').click(function(event){
+	//		window.open(event.target.href, 'table');
+	//		return false;
+	//	});
+	//})
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+    
+        var main_table = document.getElementById('elements');
+        var tw = jQuery('table').width();
+        var el_width = tw / 18.0;
+        var palette = palettes.jet(256);
+        
+        filling = [[   1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,   2],
+                   [   3,   4,null,null,null,null,null,null,null,null,null,null,   5,   6,   7,   8,   9,  10],
+                   [  11,  12,null,null,null,null,null,null,null,null,null,null,  13,  14,  15,  16,  17,  18],
+                   [  19,  20,  21,  22,  23,  24,  25,  26,  27,  28,  29,  30,  31,  32,  33,  34,  35,  36],
+                   [  37,  38,  39,  40,  41,  42,  43,  44,  45,  46,  47,  48,  49,  50,  51,  52,  53,  54],
+                   [  55,  56,null,  72,  73,  74,  75,  76,  77,  78,  79,  80,  81,  82,  83,  84,  85,  86],
+                   [  87,  88,null, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118],
+                   [null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+                   [null,null,null,  57,  58,  59,  60,  61,  62,  63,  64,  65,  66,  67,  68,  69,  70,  71],
+                   [null,null,null,  89,  90,  91,  92,  93,  94,  95,  96,  97,  98,  99, 100, 101, 102, 103]]
+        
+        var start_cell = 4;
+        show_details = function() {
+            var id = this.id.slice(0, -("-icon".length));
+            var cell_num = start_cell;
+            document.getElementById('info_symb').innerHTML = elements[id]['symbol'];
+            document.getElementById('info_name').innerHTML = elements[id]['name'];
+            for (var c in choices) {
+                var cell = main_table.rows[1].cells[cell_num];
+                var choice = choices[c];
+                var key = choice.key;
+                if (key in elements[id] && (elements[id][key] != null)) {
+                    var value = elements[id][key];
+                    //cell.setAttribute('colspan', '2');
+                    cell.innerHTML = "<span>" + value.toPrecision(4) + '<br>' + choice.units + "</span>";
+                } else {
+                    cell.innerHTML = "";
+                }            
+            cell_num += 1;
+        }  
+        }
+        
+        for (var row in filling) {
+            var active_row = filling[row];
+            var table_row = main_table.insertRow(-1);
+            for (var col in active_row) {
+                var active_col = active_row[col];
+                new_cell=table_row.insertCell(-1);
+                var id = filling[row][col] - 1;
+                if (id != null && elements[id] && elements[id].symbol) {
+                    new_cell.id = id;
+                    var icon = document.createElement('div');
+                    icon.setAttribute('class', 'icon');
+                    icon.id = id+'-icon';
+                    icon.onmouseover = show_details;
+                    icon.onclick = show_details;
+                    var symb = document.createElement('h2');
+                    symb.id = id+'-symbol';
+                    symb.innerHTML = elements[id].symbol;
+                    icon.appendChild(symb);
+                    var value_text = document.createElement('div');
+                    value_text.id = id+'-value';
+                    icon.appendChild(value_text);
+                    var unit_text = document.createElement('span');
+                    unit_text.setAttribute('class', 'units');
+                    unit_text.id = id+'-units';
+                    icon.appendChild(unit_text);
+                    new_cell.appendChild(icon);
+                }
+            }
+        }
+        
+        
+        jQuery('#elements td').css('font-size', el_width / 5.0);
+        
+        jQuery('#elements td').width(el_width + "px");
+        //jQuery('#elements tr').height(el_width + "px");
+        jQuery('#elements td').height(el_width + "px");
+        //jQuery('#elements td .icon').height('100%');
+        
+        var info_div = document.createElement('div');
+        info_div.id = "info_div";
+        jQuery('#info_div').addClass('info');
+        var info_symb = document.createElement('h1');
+        info_symb.id = "info_symb";
+        info_div.appendChild(info_symb);
+        var info_name = document.createElement('span');
+        info_name.id = "info_name";
+        info_div.appendChild(info_name);
+        document.body.appendChild(info_div);
+        
+        jQuery("#info_div").width(2*el_width + "px");
+        jQuery("#info_div").height(el_width + "px");
+        jQuery("#info_div").css('text-align', 'top left');
+        
+        
+        choices = [{'label': 'neutron coherent scatt. length', 'key': 'b_c', 'units':'fm'},
+                   //{'label': 'neutron SLD', 'key': 'nSLD', 'units': '10⁻⁶ Å⁻²³'},
+                   {'label': 'neutron nuclear SLD', 'key': 'nSLD', 'units': '10<sup>-6</sup> Å<sup>-2</sup>'},
+                   //{'label': 'neutron magnetic SLD', 'key': 'mSLD', 'units': '10<sup>-6</sup> Å<sup>-2</sup>'},
+                   {'label': 'X-Ray SLD (Cu Ka)','key':'xSLD','units':'10<sup>-6</sup> Å<sup>-2</sup>'},
+                   {'label': 'mass density', 'key': 'density', 'units':'g/cm<sup>3</sup>'},
+                   {'label': 'number density', 'key': 'number_density', 'units': '10<sup>22</sup>/cm<sup>3</sup>'}
+                   ];
+                           
+        button_select = function(button_id) {
+            jQuery('button').css('background-color', '#FFFFFF');
+            jQuery('#'+button_id + '-button').css('background-color', '#777777');
+            fill_table(button_id);
+        }
+                        
+        var cell_num = start_cell;
+        for (var c in choices) {
+            var cell = main_table.rows[0].cells[cell_num];
+            var choice = choices[c];
+            //cell.setAttribute('colspan', '2');
+            cell.innerHTML = '<button id="'+c+'-button" onclick="button_select('+ c + ')">' + choice.label + '</button>';
+            
+            cell_num += 1;
+        }    
+        
+        jQuery('#elements button').css('font-size', el_width / 6.0);
+        
+        fill_table = function(item_num) {
+            var choice = choices[item_num];
+            var item = choice.key;
+            var item_max=-Infinity;
+            var item_min=Infinity;
+            for (id in elements) {
+                if (elements[id][item]) {
+                    var nitem = elements[id][item];
+                    if (nitem > item_max) { item_max = nitem };
+                    if (nitem < item_min) { item_min = nitem };
+                }
+            }
+            for (var row in filling) {
+                var active_row = filling[row];
+                for (var col in active_row) {
+                    var active_col = active_row[col];
+                    var id = filling[row][col] - 1;
+                    if (id != null && elements[id] && elements[id].symbol) {
+                        var icon = document.getElementById(id+'-icon');
+                        value_text = document.getElementById(id+'-value');
+                        units_text = document.getElementById(id+'-units');
+                        if (elements[id][item]) {
+                            var value = elements[id][item];
+                            jQuery("#"+id+'-value').text(value.toPrecision(4));
+                            color_index = Math.floor((value - item_min) / (item_max - item_min) * 255);
+                            alpha = (value - item_min) / (item_max - item_min);
+                            //icon.setAttribute('style', 'background-color: ' + palette.str[color_index] + ";");
+                            jQuery("#"+id+"-icon").css('background-color', color_blend_alpha(alpha, 'rgb', [50, 50, 255], [255, 50, 50]));
+                            jQuery("#"+id+"-units").html(choice.units);
+                            
+                        }
+                    }
+                }
+            }
+            //jQuery('#elements .icon .units').text(choice.units);
+            //jQuery('#elements .icon').css('font-size', el_width / 5.0);
+            //jQuery('button').css('font-size', el_width / 6.0);
+            //jQuery('#elements td').width(el_width + "px");
+            //jQuery('#elements tr').height(el_width + "px");
+            //jQuery('#elements td .icon').height('100%');             
+        }
+        
+        button_select(1);
+        
+        //var info_div_loc = getPos(main_table.rows[1].cells[2]);
+        //jQuery("#info_div").position('absolute');
+        //jQuery("#info_div").offset({'top': info_div_loc.y, 'left': info_div_loc.x});
+        
+        //var tw = jQuery('table').width();
+        //var el_width = tw / 18.0;
+        
+        //jQuery('#elements').height(el_width * 10 + "px");
+        
+        //jQuery('#elements .icon').css('font-size', el_width / 5.0);
+        //jQuery('#elements td').width(el_width + "px");
+        //jQuery('#elements tr').height(el_width + "px");
+        //jQuery('#elements td .icon').height('100%');        
+        
+        
+        autoSizeFonts = function() {
+            var tw = jQuery('table').width();
+            var el_width = tw / 18.0;
+            jQuery('#content').css('font-size', el_width / 5.0);
+            jQuery('#info_div').css('font-size', el_width / 5.0);
+            jQuery('#elements td').css('font-size', el_width / 5.0);
+            jQuery('button').css('font-size', el_width / 6.0);
+            jQuery('#elements td').width(el_width + "px");
+            jQuery('#elements td').height(el_width + "px");
+            
+            jQuery("#info_div").width(2*el_width + "px");
+            jQuery("#info_div").height(el_width + "px");
+            var info_div_loc = getPos(main_table.rows[1].cells[2]);
+            jQuery("#info_div").position('absolute');
+            jQuery("#info_div").offset({'top': info_div_loc.y, 'left': info_div_loc.x});
+        }
+             
+        $(window).resize(autoSizeFonts);
+        
+        autoSizeFonts();
+               
+    }
+</script>
+
+<h1 class="title">Periodic Table for Scattering</h1>
+<center>Values from Python <a href="https://github.com/pkienzle/periodictable">periodictable program</a> by Paul Kienzle.</center>
+
+<table id="elements" cellpadding="0" cellspacing="0">
+</table>
+
+		</div>
+			
+			</body>
+</html>
