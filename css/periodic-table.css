@@ -12,7 +12,9 @@ div#info_div h1  {
 }
 
 table#elements{
+        table-layout: fixed;
 	border: 0;
+        min-width: 100px;
 	width: 100%;
 	height: 100%;
 	border-collapse: collapse;
@@ -22,8 +24,8 @@ table#elements{
 
 table#elements td,
 table#elements .element {
-	#width: 100%;
-	#height: 100%;
+	/* width: 100%; */
+	/* height: 100%; */
 	text-align: center;
 	padding: 0;
 	margin: 0;
@@ -67,8 +69,8 @@ table#elements td .icon {
 	color: black;
 	cursor: pointer;
 	display: block;
-	#font: 45px/1 "Helvetica";
-	#font-size: 1.9em;
+	/* font: 45px/1 "Helvetica"; */
+	/* font-size: 1.9em; */
 	font-weight: bold;
 	line-height: 100%;
 	width: 100%;
@@ -113,14 +115,14 @@ table#elements td:hover .icon {
 	padding: 0px;
 	top: -1px;
 	z-index: 100;
-	box-shadow: rgba(0, 0, 0, 0.75) 0 0 8px 2px;
-	-o-box-shadow: rgba(0, 0, 0, 0.75) 0 0 8px 2px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.75) 0 0 8px 2px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.75) 0 0 8px 2px;
+	box-shadow: rgba(0, 0, 0, 0.75) 0 0 4px;
+	-o-box-shadow: rgba(0, 0, 0, 0.75) 0 0 4px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.75) 0 0 4px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.75) 0 0 4px;
 }
 table#elementsr .active .icon .occurences,
 table#elements td:hover .icon .occurences {
-	#display: block;
+        /* display: block; */
 }
 
 table#elements .icon .occurences {
@@ -150,10 +152,10 @@ table#elements td .info {
 	-o-border-radius: 0.5em;
 	-moz-border-radius: 0.5em;
 	-webkit-border-radius: 0.5em;
-	box-shadow: rgba(0, 0, 0, 0.75) 0 0 8px 2px;
-	-o-box-shadow: rgba(0, 0, 0, 0.75) 0 0 8px 2px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.75) 0 0 8px 2px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.75) 0 0 8px 2px;
+	box-shadow: rgba(0, 0, 0, 0.75) 0 0 4px;
+	-o-box-shadow: rgba(0, 0, 0, 0.75) 0 0 4px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.75) 0 0 4px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.75) 0 0 4px;
 }
 
 table#elements td .info h3 {

@@ -44,7 +44,7 @@
     
         var main_table = document.getElementById('elements');
         var tw = jQuery('table').width();
-        var el_width = tw / 18.0;
+        var el_width = tw / 21.0;
         var palette = palettes.jet(256);
         
         filling = [[   1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,   2],
@@ -75,8 +75,8 @@
                 } else {
                     cell.innerHTML = "";
                 }            
-            cell_num += 1;
-        }  
+                cell_num += 1;
+            }  
         }
         
         for (var row in filling) {
@@ -133,11 +133,11 @@
         jQuery("#info_div").css('text-align', 'top left');
         
         
-        choices = [{'label': 'neutron coherent scatt. length', 'key': 'b_c', 'units':'fm'},
-                   //{'label': 'neutron SLD', 'key': 'nSLD', 'units': '10⁻⁶ Å⁻²³'},
-                   {'label': 'neutron nuclear SLD', 'key': 'nSLD', 'units': '10<sup>-6</sup> Å<sup>-2</sup>'},
+        choices = [{'label': 'neutron coherent scatt. len', 'key': 'b_c', 'units':'fm'},
+                   //{'label': 'neutron SLD', 'key': 'nSLD', 'units': '10<sup>-6</sup> &Aring;<sup>-2</sup>'},
+                   {'label': 'neutron nuclear SLD', 'key': 'nSLD', 'units': '10<sup>-6</sup> &Aring;<sup>-2</sup>'},
                    //{'label': 'neutron magnetic SLD', 'key': 'mSLD', 'units': '10<sup>-6</sup> Å<sup>-2</sup>'},
-                   {'label': 'X-Ray SLD (Cu Ka)','key':'xSLD','units':'10<sup>-6</sup> Å<sup>-2</sup>'},
+                   {'label': 'X-Ray SLD (Cu K<sub>&alpha;</sub>)','key':'xSLD','units':'10<sup>-6</sup> &Aring;<sup>-2</sup>'},
                    {'label': 'mass density', 'key': 'density', 'units':'g/cm<sup>3</sup>'},
                    {'label': 'number density', 'key': 'number_density', 'units': '10<sup>22</sup>/cm<sup>3</sup>'}
                    ];
@@ -221,7 +221,7 @@
         
         autoSizeFonts = function() {
             var tw = jQuery('table').width();
-            var el_width = tw / 18.0;
+            var el_width = tw / 21.0;
             jQuery('#content').css('font-size', el_width / 5.0);
             jQuery('#info_div').css('font-size', el_width / 5.0);
             jQuery('#elements td').css('font-size', el_width / 5.0);
@@ -249,7 +249,6 @@
 <table id="elements" cellpadding="0" cellspacing="0">
 </table>
 
-		</div>
-			
-			</body>
+</div>
+</body>
 </html>
