@@ -44,7 +44,7 @@
     
         var main_table = document.getElementById('elements');
         var tw = jQuery('table').width();
-        var el_width = tw / 21.0;
+        var el_width = tw / 18.0 - 8;
         var palette = palettes.jet(256);
         
         filling = [[   1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,   2],
@@ -221,7 +221,7 @@
         
         autoSizeFonts = function() {
             var tw = jQuery('table').width();
-            var el_width = tw / 21.0;
+            var el_width = tw / 18.0 - 8;
             jQuery('#content').css('font-size', el_width / 5.0);
             jQuery('#info_div').css('font-size', el_width / 5.0);
             jQuery('#elements td').css('font-size', el_width / 5.0);
