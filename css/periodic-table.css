@@ -198,3 +198,9 @@ table#elements td .links li:last-child:after {
 	content: "";
 }
 
+span#attribution {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
