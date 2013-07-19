@@ -7,6 +7,7 @@ elements = [
         "density": 0.0708,
         "symbol": "H",
         "b_c": -3.7409,
+        "iSLD": 10.690500598084549,
         "number": 1,
         "nSLD": -1.5824341724036532
     },
@@ -18,6 +19,7 @@ elements = [
         "density": 0.122,
         "symbol": "He",
         "b_c": 3.26,
+        "iSLD": 0.034721283600170239,
         "number": 2,
         "nSLD": 0.5983923039859569
     },
@@ -29,6 +31,7 @@ elements = [
         "density": 0.534,
         "symbol": "Li",
         "b_c": -1.9,
+        "iSLD": 1.251114052714777,
         "number": 3,
         "nSLD": -0.8802859905105891
     },
@@ -40,6 +43,7 @@ elements = [
         "density": 1.848,
         "symbol": "Be",
         "b_c": 7.79,
+        "iSLD": 0.22605562602336721,
         "number": 4,
         "nSLD": 9.619676060414315
     },
@@ -51,6 +55,7 @@ elements = [
         "density": 2.34,
         "symbol": "B",
         "b_c": 5.3,
+        "iSLD": 4.8084777728707824,
         "number": 5,
         "nSLD": 6.908389832539079
     },
@@ -62,6 +67,7 @@ elements = [
         "density": 2.1,
         "symbol": "C",
         "b_c": 6.6484,
+        "iSLD": 0.0,
         "number": 6,
         "nSLD": 7.000339339167208
     },
@@ -73,6 +79,7 @@ elements = [
         "density": 0.808,
         "symbol": "N",
         "b_c": 9.36,
+        "iSLD": 0.69340980286879972,
         "number": 7,
         "nSLD": 3.2516392655482877
     },
@@ -84,6 +91,7 @@ elements = [
         "density": 1.14,
         "symbol": "O",
         "b_c": 5.805,
+        "iSLD": 0.0,
         "number": 8,
         "nSLD": 2.4908888910636016
     },
@@ -95,6 +103,7 @@ elements = [
         "density": 1.5,
         "symbol": "F",
         "b_c": 5.654,
+        "iSLD": 0.038369361375822308,
         "number": 9,
         "nSLD": 2.6883198542175375
     },
@@ -106,6 +115,7 @@ elements = [
         "density": 1.207,
         "symbol": "Ne",
         "b_c": 4.566,
+        "iSLD": 0.091552801823795577,
         "number": 10,
         "nSLD": 1.6446725665723467
     },
@@ -117,6 +127,7 @@ elements = [
         "density": 0.971,
         "symbol": "Na",
         "b_c": 3.63,
+        "iSLD": 0.91441351189904441,
         "number": 11,
         "nSLD": 0.9232986598590023
     },
@@ -128,6 +139,7 @@ elements = [
         "density": 1.738,
         "symbol": "Mg",
         "b_c": 5.375,
+        "iSLD": 0.34251179607362403,
         "number": 12,
         "nSLD": 2.314640735105225
     },
@@ -139,6 +151,7 @@ elements = [
         "density": 2.6989,
         "symbol": "Al",
         "b_c": 3.449,
+        "iSLD": 0.15345106438197703,
         "number": 13,
         "nSLD": 2.0776111275524736
     },
@@ -150,6 +163,7 @@ elements = [
         "density": 2.33,
         "symbol": "Si",
         "b_c": 4.15071,
+        "iSLD": 0.063283270130335245,
         "number": 14,
         "nSLD": 2.0737057366814975
     },
@@ -161,6 +175,7 @@ elements = [
         "density": 1.82,
         "symbol": "P",
         "b_c": 5.13,
+        "iSLD": 0.070023186008017019,
         "number": 15,
         "nSLD": 1.8152890453475767
     },
@@ -172,6 +187,7 @@ elements = [
         "density": 2.07,
         "symbol": "S",
         "b_c": 2.847,
+        "iSLD": 0.094622858896608167,
         "number": 16,
         "nSLD": 1.1068213937186684
     },
@@ -183,6 +199,7 @@ elements = [
         "density": 1.56,
         "symbol": "Cl",
         "b_c": 9.5792,
+        "iSLD": 1.7158536729754246,
         "number": 17,
         "nSLD": 2.5383518740371214
     },
@@ -194,6 +211,7 @@ elements = [
         "density": 1.4,
         "symbol": "Ar",
         "b_c": 1.909,
+        "iSLD": 0.28243260157818273,
         "number": 18,
         "nSLD": 0.402893164813107
     },
@@ -205,6 +223,7 @@ elements = [
         "density": 0.862,
         "symbol": "K",
         "b_c": 3.67,
+        "iSLD": 0.19369356879596022,
         "number": 19,
         "nSLD": 0.4872663629451049
     },
@@ -216,6 +235,7 @@ elements = [
         "density": 1.55,
         "symbol": "Ca",
         "b_c": 4.7,
+        "iSLD": 0.15280061395178995,
         "number": 20,
         "nSLD": 1.0946480098844753
     },
@@ -227,6 +247,7 @@ elements = [
         "density": 2.989,
         "symbol": "Sc",
         "b_c": 12.1,
+        "iSLD": 2.5511581405329236,
         "number": 21,
         "nSLD": 4.844795709946722
     },
@@ -238,6 +259,7 @@ elements = [
         "density": 4.54,
         "symbol": "Ti",
         "b_c": -3.37,
+        "iSLD": 2.7546659531268824,
         "number": 22,
         "nSLD": -1.9248660864194955
     },
@@ -249,6 +271,7 @@ elements = [
         "density": 6.11,
         "symbol": "V",
         "b_c": -0.443,
+        "iSLD": 4.5903736479408828,
         "number": 23,
         "nSLD": -0.31998099481261255
     },
@@ -260,6 +283,7 @@ elements = [
         "density": 7.19,
         "symbol": "Cr",
         "b_c": 3.635,
+        "iSLD": 3.1774558998165952,
         "number": 24,
         "nSLD": 3.027007603912861
     },
@@ -271,6 +295,7 @@ elements = [
         "density": 7.33,
         "symbol": "Mn",
         "b_c": -3.75,
+        "iSLD": 1.4024696006274595,
         "number": 25,
         "nSLD": -3.0130961231008584
     },
@@ -282,6 +307,7 @@ elements = [
         "density": 7.874,
         "symbol": "Fe",
         "b_c": 9.45,
+        "iSLD": 1.5109613047713821,
         "number": 26,
         "nSLD": 8.024055064815952
     },
@@ -293,6 +319,7 @@ elements = [
         "density": 8.9,
         "symbol": "Co",
         "b_c": 2.49,
+        "iSLD": 5.6329882940161067,
         "number": 27,
         "nSLD": 2.2645416201426363
     },
@@ -304,6 +331,7 @@ elements = [
         "density": 8.902,
         "symbol": "Ni",
         "b_c": 10.3,
+        "iSLD": 5.8576011379858226,
         "number": 28,
         "nSLD": 9.407766358912143
     },
@@ -315,6 +343,7 @@ elements = [
         "density": 8.96,
         "symbol": "Cu",
         "b_c": 7.718,
+        "iSLD": 1.7675610224135276,
         "number": 29,
         "nSLD": 6.553533777162547
     },
@@ -326,6 +355,7 @@ elements = [
         "density": 7.133,
         "symbol": "Zn",
         "b_c": 5.68,
+        "iSLD": 0.51336387874124267,
         "number": 30,
         "nSLD": 3.7302163978082152
     },
@@ -337,6 +367,7 @@ elements = [
         "density": 5.904,
         "symbol": "Ga",
         "b_c": 7.288,
+        "iSLD": 0.56703894503751151,
         "number": 31,
         "nSLD": 3.7164613790862426
     },
@@ -348,6 +379,7 @@ elements = [
         "density": 5.323,
         "symbol": "Ge",
         "b_c": 8.185,
+        "iSLD": 0.52999838215445472,
         "number": 32,
         "nSLD": 3.612021203521083
     },
@@ -359,6 +391,7 @@ elements = [
         "density": 5.73,
         "symbol": "As",
         "b_c": 6.58,
+        "iSLD": 0.31615896778621344,
         "number": 33,
         "nSLD": 3.03057090031561
     },
@@ -370,6 +403,7 @@ elements = [
         "density": 4.79,
         "symbol": "Se",
         "b_c": 7.97,
+        "iSLD": 0.58090131558049385,
         "number": 34,
         "nSLD": 2.911639964761614
     },
@@ -381,6 +415,7 @@ elements = [
         "density": 3.12,
         "symbol": "Br",
         "b_c": 6.79,
+        "iSLD": 0.21636065544209049,
         "number": 35,
         "nSLD": 1.5966393346114336
     },
@@ -392,6 +427,7 @@ elements = [
         "density": 2.16,
         "symbol": "Kr",
         "b_c": 7.81,
+        "iSLD": 0.05363766558585098,
         "number": 36,
         "nSLD": 1.212333506057233
     },
@@ -403,6 +439,7 @@ elements = [
         "density": 1.532,
         "symbol": "Rb",
         "b_c": 7.08,
+        "iSLD": 0.21552177378246637,
         "number": 37,
         "nSLD": 0.7642588466503454
     },
@@ -414,6 +451,7 @@ elements = [
         "density": 2.54,
         "symbol": "Sr",
         "b_c": 7.02,
+        "iSLD": 0.11782434497891654,
         "number": 38,
         "nSLD": 1.2255147891934715
     },
@@ -425,6 +463,7 @@ elements = [
         "density": 4.469,
         "symbol": "Y",
         "b_c": 7.75,
+        "iSLD": 0.3332803658883311,
         "number": 39,
         "nSLD": 2.3460253218568012
     },
@@ -436,6 +475,7 @@ elements = [
         "density": 6.506,
         "symbol": "Zr",
         "b_c": 7.16,
+        "iSLD": 0.16152963409711232,
         "number": 40,
         "nSLD": 3.075168706896194
     },
@@ -447,6 +487,7 @@ elements = [
         "density": 8.57,
         "symbol": "Nb",
         "b_c": 7.054,
+        "iSLD": 0.071985216916974085,
         "number": 41,
         "nSLD": 3.918516820477519
     },
@@ -458,6 +499,7 @@ elements = [
         "density": 10.22,
         "symbol": "Mo",
         "b_c": 6.715,
+        "iSLD": 0.37816958271523199,
         "number": 42,
         "nSLD": 4.307727030069492
     },
@@ -469,6 +511,7 @@ elements = [
         "density": 11.5,
         "symbol": "Tc",
         "b_c": 6.8,
+        "iSLD": 1.3944725068252879,
         "number": 43,
         "nSLD": 4.805423346714285
     },
@@ -480,6 +523,7 @@ elements = [
         "density": 12.41,
         "symbol": "Ru",
         "b_c": 7.02,
+        "iSLD": 1.331134682247187,
         "number": 44,
         "nSLD": 5.190839545756188
     },
@@ -491,6 +535,7 @@ elements = [
         "density": 12.41,
         "symbol": "Rh",
         "b_c": 5.9,
+        "iSLD": 0.97318057815567738,
         "number": 45,
         "nSLD": 4.284855520084058
     },
@@ -502,6 +547,7 @@ elements = [
         "density": 12.02,
         "symbol": "Pd",
         "b_c": 5.91,
+        "iSLD": 0.57820700360003263,
         "number": 46,
         "nSLD": 4.019940921879139
     },
@@ -513,6 +559,7 @@ elements = [
         "density": 10.5,
         "symbol": "Ag",
         "b_c": 5.922,
+        "iSLD": 1.262590473717262,
         "number": 47,
         "nSLD": 3.4714846325792954
     },
@@ -524,6 +571,7 @@ elements = [
         "density": 8.65,
         "symbol": "Cd",
         "b_c": 4.83,
+        "iSLD": 2.469393766457443,
         "number": 48,
         "nSLD": 2.238233561798267
     },
@@ -535,6 +583,7 @@ elements = [
         "density": 7.31,
         "symbol": "In",
         "b_c": 4.065,
+        "iSLD": 0.79736115458798396,
         "number": 49,
         "nSLD": 1.5585434915354603
     },
@@ -546,6 +595,7 @@ elements = [
         "density": 7.31,
         "symbol": "Sn",
         "b_c": 6.225,
+        "iSLD": 0.15675154361997751,
         "number": 50,
         "nSLD": 2.3084496387709748
     },
@@ -557,6 +607,7 @@ elements = [
         "density": 6.691,
         "symbol": "Sb",
         "b_c": 5.57,
+        "iSLD": 0.03360848120195193,
         "number": 51,
         "nSLD": 1.8432853112112126
     },
@@ -568,6 +619,7 @@ elements = [
         "density": 6.24,
         "symbol": "Te",
         "b_c": 5.68,
+        "iSLD": 0.42829896930769207,
         "number": 52,
         "nSLD": 1.6727584317502195
     },
@@ -579,6 +631,7 @@ elements = [
         "density": 4.93,
         "symbol": "I",
         "b_c": 5.28,
+        "iSLD": 0.36548601350164411,
         "number": 53,
         "nSLD": 1.235250103092633
     },
@@ -590,6 +643,7 @@ elements = [
         "density": 3.52,
         "symbol": "Xe",
         "b_c": 4.69,
+        "iSLD": 0.23922908386350045,
         "number": 54,
         "nSLD": 0.7572249425540736
     },
@@ -601,6 +655,7 @@ elements = [
         "density": 1.873,
         "symbol": "Cs",
         "b_c": 5.42,
+        "iSLD": 0.10930620016978715,
         "number": 55,
         "nSLD": 0.4599866741647645
     },
@@ -612,6 +667,7 @@ elements = [
         "density": 3.5,
         "symbol": "Ba",
         "b_c": 5.07,
+        "iSLD": 0.1675919669340738,
         "number": 56,
         "nSLD": 0.7781638429700641
     },
@@ -623,6 +679,7 @@ elements = [
         "density": 6.145,
         "symbol": "La",
         "b_c": 8.24,
+        "iSLD": 0.79809061076421661,
         "number": 57,
         "nSLD": 2.195233054906336
     },
@@ -634,6 +691,7 @@ elements = [
         "density": 6.77,
         "symbol": "Ce",
         "b_c": 4.84,
+        "iSLD": 0.0,
         "number": 58,
         "nSLD": 1.4083068001125634
     },
@@ -645,6 +703,7 @@ elements = [
         "density": 6.773,
         "symbol": "Pr",
         "b_c": 4.58,
+        "iSLD": 0.12657556183867968,
         "number": 59,
         "nSLD": 1.3257540371584409
     },
@@ -656,6 +715,7 @@ elements = [
         "density": 7.008,
         "symbol": "Nd",
         "b_c": 7.69,
+        "iSLD": 2.4992472188655768,
         "number": 60,
         "nSLD": 2.2500164636620963
     },
@@ -667,6 +727,7 @@ elements = [
         "density": 7.264,
         "symbol": "Pm",
         "b_c": 12.6,
+        "iSLD": 0.98869250436997902,
         "number": 61,
         "nSLD": 3.8012755746776272
     },
@@ -678,6 +739,7 @@ elements = [
         "density": 7.52,
         "symbol": "Sm",
         "b_c": 0.0,
+        "iSLD": 5.3330994103118812,
         "number": 62,
         "nSLD": 0.0
     },
@@ -689,6 +751,7 @@ elements = [
         "density": 5.244,
         "symbol": "Eu",
         "b_c": 5.3,
+        "iSLD": 1.3959299299878927,
         "number": 63,
         "nSLD": 1.101409486443026
     },
@@ -700,6 +763,7 @@ elements = [
         "density": 7.901,
         "symbol": "Gd",
         "b_c": 9.5,
+        "iSLD": 11.085161388758911,
         "number": 64,
         "nSLD": 2.874524335049316
     },
@@ -711,6 +775,7 @@ elements = [
         "density": 8.23,
         "symbol": "Tb",
         "b_c": 7.34,
+        "iSLD": 0.23241111846514423,
         "number": 65,
         "nSLD": 2.289041795843746
     },
@@ -722,6 +787,7 @@ elements = [
         "density": 8.551,
         "symbol": "Dy",
         "b_c": 16.9,
+        "iSLD": 6.593950939985298,
         "number": 66,
         "nSLD": 5.3555147824141605
     },
@@ -733,6 +799,7 @@ elements = [
         "density": 8.795,
         "symbol": "Ho",
         "b_c": 8.44,
+        "iSLD": 0.0,
         "number": 67,
         "nSLD": 2.710371147302339
     },
@@ -744,6 +811,7 @@ elements = [
         "density": 9.066,
         "symbol": "Er",
         "b_c": 7.79,
+        "iSLD": 0.95437065964416612,
         "number": 68,
         "nSLD": 2.542814347071372
     },
@@ -755,6 +823,7 @@ elements = [
         "density": 9.321,
         "symbol": "Tm",
         "b_c": 7.07,
+        "iSLD": 0.29449396241139641,
         "number": 69,
         "nSLD": 2.349174582376484
     },
@@ -766,6 +835,7 @@ elements = [
         "density": 6.966,
         "symbol": "Yb",
         "b_c": 12.41,
+        "iSLD": 1.3757430995830924,
         "number": 70,
         "nSLD": 3.0085672375775974
     },
@@ -777,6 +847,7 @@ elements = [
         "density": 9.841,
         "symbol": "Lu",
         "b_c": 7.21,
+        "iSLD": 0.78063855120978065,
         "number": 71,
         "nSLD": 2.4421330875671514
     },
@@ -788,6 +859,7 @@ elements = [
         "density": 13.31,
         "symbol": "Hf",
         "b_c": 7.77,
+        "iSLD": 2.0478885140389487,
         "number": 72,
         "nSLD": 3.489282733696413
     },
@@ -799,6 +871,7 @@ elements = [
         "density": 16.654,
         "symbol": "Ta",
         "b_c": 6.91,
+        "iSLD": 0.15475796725844451,
         "number": 73,
         "nSLD": 3.829958226380414
     },
@@ -810,6 +883,7 @@ elements = [
         "density": 19.3,
         "symbol": "W",
         "b_c": 4.755,
+        "iSLD": 2.3651801199736902,
         "number": 74,
         "nSLD": 3.0062064038347747
     },
@@ -821,6 +895,7 @@ elements = [
         "density": 21.02,
         "symbol": "Re",
         "b_c": 9.2,
+        "iSLD": 1.7823597413030059,
         "number": 75,
         "nSLD": 6.254253964229916
     },
@@ -832,6 +907,7 @@ elements = [
         "density": 22.57,
         "symbol": "Os",
         "b_c": 10.7,
+        "iSLD": 1.1272124672968411,
         "number": 76,
         "nSLD": 7.645172791584976
     },
@@ -843,6 +919,7 @@ elements = [
         "density": 22.42,
         "symbol": "Ir",
         "b_c": 10.6,
+        "iSLD": 0.0,
         "number": 77,
         "nSLD": 7.44561636419817
     },
@@ -854,6 +931,7 @@ elements = [
         "density": 21.45,
         "symbol": "Pt",
         "b_c": 9.6,
+        "iSLD": 0.67046844047727405,
         "number": 78,
         "nSLD": 6.356838994642141
     },
@@ -865,6 +943,7 @@ elements = [
         "density": 19.3,
         "symbol": "Au",
         "b_c": 7.9,
+        "iSLD": 0.0,
         "number": 79,
         "nSLD": 4.661684731348038
     },
@@ -876,6 +955,7 @@ elements = [
         "density": 13.546,
         "symbol": "Hg",
         "b_c": 12.595,
+        "iSLD": 3.0059563781048668,
         "number": 80,
         "nSLD": 5.122134065492034
     },
@@ -887,6 +967,7 @@ elements = [
         "density": 11.85,
         "symbol": "Tl",
         "b_c": 8.776,
+        "iSLD": 0.45309332034467398,
         "number": 81,
         "nSLD": 3.064224174558899
     },
@@ -898,6 +979,7 @@ elements = [
         "density": 11.35,
         "symbol": "Pb",
         "b_c": 9.401,
+        "iSLD": 0.10190694731736516,
         "number": 82,
         "nSLD": 3.1012097436506583
     },
@@ -909,6 +991,7 @@ elements = [
         "density": 9.747,
         "symbol": "Bi",
         "b_c": 8.532,
+        "iSLD": 0.072218181690486508,
         "number": 83,
         "nSLD": 2.396443945328615
     },
@@ -920,6 +1003,7 @@ elements = [
         "density": 9.32,
         "symbol": "Po",
         "b_c": null,
+        "iSLD": null,
         "number": 84,
         "nSLD": null
     },
@@ -931,6 +1015,7 @@ elements = [
         "density": null,
         "symbol": "At",
         "b_c": null,
+        "iSLD": null,
         "number": 85,
         "nSLD": null
     },
@@ -942,6 +1027,7 @@ elements = [
         "density": null,
         "symbol": "Rn",
         "b_c": null,
+        "iSLD": null,
         "number": 86,
         "nSLD": null
     },
@@ -953,6 +1039,7 @@ elements = [
         "density": null,
         "symbol": "Fr",
         "b_c": null,
+        "iSLD": null,
         "number": 87,
         "nSLD": null
     },
@@ -964,6 +1051,7 @@ elements = [
         "density": null,
         "symbol": "Ra",
         "b_c": 10.0,
+        "iSLD": null,
         "number": 88,
         "nSLD": null
     },
@@ -975,6 +1063,7 @@ elements = [
         "density": null,
         "symbol": "Ac",
         "b_c": null,
+        "iSLD": null,
         "number": 89,
         "nSLD": null
     },
@@ -986,6 +1075,7 @@ elements = [
         "density": 11.72,
         "symbol": "Th",
         "b_c": 10.31,
+        "iSLD": 0.042368430303498184,
         "number": 90,
         "nSLD": 3.136013712142222
     },
@@ -997,6 +1087,7 @@ elements = [
         "density": 15.37,
         "symbol": "Pa",
         "b_c": 9.1,
+        "iSLD": 0.34611088876806517,
         "number": 91,
         "nSLD": 3.6457493344407372
     },
@@ -1008,6 +1099,7 @@ elements = [
         "density": 18.95,
         "symbol": "U",
         "b_c": 8.417,
+        "iSLD": 0.097930154968239647,
         "number": 92,
         "nSLD": 4.0354113418821616
     },
@@ -1019,6 +1111,7 @@ elements = [
         "density": 20.25,
         "symbol": "Np",
         "b_c": 10.55,
+        "iSLD": 1.039955726332509,
         "number": 93,
         "nSLD": 5.4285034458275305
     },
@@ -1030,6 +1123,7 @@ elements = [
         "density": 19.84,
         "symbol": "Pu",
         "b_c": 7.7,
+        "iSLD": 0.68983483358322728,
         "number": 94,
         "nSLD": 3.77045310235541
     },
@@ -1041,6 +1135,7 @@ elements = [
         "density": 13.67,
         "symbol": "Am",
         "b_c": 8.3,
+        "iSLD": 0.55972231001517359,
         "number": 95,
         "nSLD": 2.8118445663999587
     },
@@ -1052,6 +1147,7 @@ elements = [
         "density": 13.51,
         "symbol": "Cm",
         "b_c": 9.5,
+        "iSLD": 0.0,
         "number": 96,
         "nSLD": 3.12919752241923
     },
@@ -1063,6 +1159,7 @@ elements = [
         "density": 14,
         "symbol": "Bk",
         "b_c": null,
+        "iSLD": null,
         "number": 97,
         "nSLD": null
     },
@@ -1074,6 +1171,7 @@ elements = [
         "density": null,
         "symbol": "Cf",
         "b_c": null,
+        "iSLD": null,
         "number": 98,
         "nSLD": null
     },
@@ -1085,6 +1183,7 @@ elements = [
         "density": null,
         "symbol": "Es",
         "b_c": null,
+        "iSLD": null,
         "number": 99,
         "nSLD": null
     },
@@ -1096,6 +1195,7 @@ elements = [
         "density": null,
         "symbol": "Fm",
         "b_c": null,
+        "iSLD": null,
         "number": 100,
         "nSLD": null
     },
@@ -1107,6 +1207,7 @@ elements = [
         "density": null,
         "symbol": "Md",
         "b_c": null,
+        "iSLD": null,
         "number": 101,
         "nSLD": null
     },
@@ -1118,6 +1219,7 @@ elements = [
         "density": null,
         "symbol": "No",
         "b_c": null,
+        "iSLD": null,
         "number": 102,
         "nSLD": null
     },
@@ -1129,6 +1231,7 @@ elements = [
         "density": null,
         "symbol": "Lr",
         "b_c": null,
+        "iSLD": null,
         "number": 103,
         "nSLD": null
     },
@@ -1140,6 +1243,7 @@ elements = [
         "density": null,
         "symbol": "Rf",
         "b_c": null,
+        "iSLD": null,
         "number": 104,
         "nSLD": null
     },
@@ -1151,6 +1255,7 @@ elements = [
         "density": null,
         "symbol": "Db",
         "b_c": null,
+        "iSLD": null,
         "number": 105,
         "nSLD": null
     },
@@ -1162,6 +1267,7 @@ elements = [
         "density": null,
         "symbol": "Sg",
         "b_c": null,
+        "iSLD": null,
         "number": 106,
         "nSLD": null
     },
@@ -1173,6 +1279,7 @@ elements = [
         "density": null,
         "symbol": "Bh",
         "b_c": null,
+        "iSLD": null,
         "number": 107,
         "nSLD": null
     },
@@ -1184,6 +1291,7 @@ elements = [
         "density": null,
         "symbol": "Hs",
         "b_c": null,
+        "iSLD": null,
         "number": 108,
         "nSLD": null
     },
@@ -1195,6 +1303,7 @@ elements = [
         "density": null,
         "symbol": "Mt",
         "b_c": null,
+        "iSLD": null,
         "number": 109,
         "nSLD": null
     },
@@ -1206,6 +1315,7 @@ elements = [
         "density": null,
         "symbol": "Ds",
         "b_c": null,
+        "iSLD": null,
         "number": 110,
         "nSLD": null
     },
@@ -1217,6 +1327,7 @@ elements = [
         "density": null,
         "symbol": "Rg",
         "b_c": null,
+        "iSLD": null,
         "number": 111,
         "nSLD": null
     },
@@ -1228,6 +1339,7 @@ elements = [
         "density": null,
         "symbol": "Cn",
         "b_c": null,
+        "iSLD": null,
         "number": 112,
         "nSLD": null
     },
@@ -1240,6 +1352,7 @@ elements = [
         "density": null,
         "symbol": "Uuq",
         "b_c": null,
+        "iSLD": null,
         "number": 114,
         "nSLD": null
     },
@@ -1252,6 +1365,7 @@ elements = [
         "density": null,
         "symbol": "Uuh",
         "b_c": null,
+        "iSLD": null,
         "number": 116,
         "nSLD": null
     },

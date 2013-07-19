@@ -22,6 +22,7 @@ for n in range(1,119):
             "name": el.name,
             "number": el.number,
             "nSLD": el.neutron.sld()[0],
+            "iSLD": el.neutron.sld()[2],
             "xSLD": el.xray.sld(wavelength=wl)[0],
             "b_c": el.neutron.b_c,
             "b_p": el.neutron.bp,
