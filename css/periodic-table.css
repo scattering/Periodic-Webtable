@@ -204,3 +204,9 @@ span#attribution {
     padding-right: 20px;
 }
 
+span#lastmodified {
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
