@@ -3,8 +3,7 @@
 #header-wrapper,
 #content-wrapper,
 #footer {
-	width: 100%;
-	margin: 0 auto;
+	margin: auto;
 }
 
 /* Fonts */

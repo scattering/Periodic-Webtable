@@ -11,10 +11,7 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
 		<script type="text/javascript" src="js/periodic_table.js"></script>
 		<script type="text/javascript" src="js/palettes.js"></script>
-			</head>
-	<body class="" id="periodic-table">		
-		<div id="content-wrapper">
-		<div id="content">
+
 		<script type="text/javascript">
 	    getPos = function(el) {
             // yay readability
@@ -221,7 +218,16 @@
         
         
         autoSizeFonts = function() {
+            var visibleHeight = $(window).height();
+            var bh = $('body').height();
             var tw = jQuery('table').width();
+            if (bh > visibleHeight) {
+                tw = tw * visibleHeight / bh;
+            }
+            else {
+                tw = $('body').width();
+            }
+            $('table').width(tw);
             var el_width = tw / 18.0 - 8;
             jQuery('#content').css('font-size', el_width / 5.0);
             jQuery('#info_div').css('font-size', el_width / 5.0);
@@ -243,17 +249,19 @@
                
     }
 </script>
+</head>
+	<body class="" id="periodic-table">		
+	    <div id="content-wrapper">
+		<div id="content">
+          <h1 class="title">Periodic Table for Scattering</h1>
 
-<h1 class="title">Periodic Table for Scattering</h1>
-<!--<center>Values from Python <a href="https://github.com/pkienzle/periodictable">periodictable program</a> by Paul Kienzle.</center>-->
+          <table id="elements" cellpadding="0" cellspacing="0"></table>
 
-<table id="elements" cellpadding="0" cellspacing="0">
-</table>
-
-</div>
-<div id='footer'>
-    <span id='attribution'>Values from Python <a href="https://github.com/pkienzle/periodictable">periodictable program</a> by Paul Kienzle.</span>
-    <span id='lastmodified'><? include("/var/www/include/utility.inc"); lastmod(); ?></span>
-</div>
-</body>
+          <div id='footer'>
+            <span id='attribution'>Values from Python <a href="https://github.com/pkienzle/periodictable">periodictable program</a> by Paul Kienzle.</span>
+            <span id='lastmodified'><? include("/var/www/include/utility.inc"); lastmod(); ?></span>
+          </div>
+        </div>
+        </div>
+    </body>
 </html>
