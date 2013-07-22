@@ -189,6 +189,11 @@
                             jQuery("#"+id+"-units").html(choice.units);
                             
                         }
+                        else {
+                            jQuery("#"+id+'-value').text("");
+                            jQuery("#"+id+"-icon").css('background-color', 'rgb(255, 255, 255)');
+                            jQuery("#"+id+"-units").html("");
+                        }
                     }
                 }
             }
