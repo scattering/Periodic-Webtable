@@ -164,7 +164,7 @@
             var item_max=-Infinity;
             var item_min=Infinity;
             for (id in elements) {
-                if (elements[id][item]) {
+                if (elements[id][item] != null) {
                     var nitem = elements[id][item];
                     if (nitem > item_max) { item_max = nitem };
                     if (nitem < item_min) { item_min = nitem };
@@ -179,7 +179,7 @@
                         var icon = document.getElementById(id+'-icon');
                         value_text = document.getElementById(id+'-value');
                         units_text = document.getElementById(id+'-units');
-                        if (elements[id][item]) {
+                        if (elements[id][item] != null) {
                             var value = elements[id][item];
                             jQuery("#"+id+'-value').text(value.toPrecision(4));
                             color_index = Math.floor((value - item_min) / (item_max - item_min) * 255);
